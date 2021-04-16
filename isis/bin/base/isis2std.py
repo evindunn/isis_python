@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from argparse import ArgumentParser
-from isis.base import isis2std
+from ...base import isis2std
 
 
 def main():

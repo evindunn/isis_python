@@ -1,7 +1,7 @@
-from ..isis import load_isis
+from ..isis import include_isis
 
 
-Isis = load_isis([
+Isis = include_isis([
     "ExportDescription.h",
     "FileName.h",
     "ImageExporter.h",

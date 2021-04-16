@@ -1,7 +1,7 @@
 # ISIS
 Python bindings for ISIS
 
-See [/bin](./bin) for examples on how to use the library
+See [/bin](./isis/bin) for examples on how to use the library
 
 The only setup requirement is the conda environment, which installs
 the ISIS binaries & Python dependencies: 

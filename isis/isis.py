@@ -8,7 +8,7 @@ _ENV_CONDA_PREFIX = "CONDA_PREFIX"
 _ENV_ISIS_ROOT = "ISISROOT"
 
 
-def load_isis(headers: List[str]):
+def _load_isis():
     isis_prefix = getenv(_ENV_ISIS_ROOT, None)
 
     if isis_prefix is None:
@@ -27,9 +27,12 @@ def load_isis(headers: List[str]):
 
     cppyy.add_library_path(path_join(isis_prefix, "lib"))
 
+    cppyy.load_library("isis")
+
+
+def include_isis(headers: List[str]):
     for file in headers:
         if not cppyy.include(file):
             raise Exception("Failed to load {}!".format(file))
 
-    cppyy.load_library("isis")
     return cppyy.gbl.Isis
