@@ -14,4 +14,3 @@ the ISIS binaries & Python dependencies:
 [cppyy](https://cppyy.readthedocs.io/en/latest/index.html) to load
 the headers and library that links the Python code to `libisis.so`
 
-
