@@ -40,4 +40,4 @@ def isis2std(from_: str, to: str, fmt: str):
     exporter.setGrayscale(exportDesc)
 
     output_file_name = Isis.FileName(to)
-    exporter.write(output_file_name, quality, compression)
+    exporter.write_to_file(output_file_name, quality, compression)
